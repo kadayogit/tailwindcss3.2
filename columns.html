@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Tailwind Columns</title>
+</head>
+<body class="box-decoration-clone bg-gradient-to-r from-indigo-50 to-pink-100">
+
+    <h1 class="text-center text-lg font-extrabold">Columns</h1>
+    <p class="text-center">Utilities for controlling the number of columns within an element.</p>
+    <!-- columns-1, columns-2, columns-3 ......columns-12,2xs, 3xs,sm,md,lg,xl,2xl,3xl......7xl -->
+    <div class="columns-6 gap-x-4 ">
+        <!-- <img class="w-full aspect-video" src="/img/photo.jpg" alt="">
+        <img class="w-full aspect-square" src="/img/photo.jpg" alt=""> -->
+    </div>
+
+    <div class="container columns-1 md:columns-1 lg:columns-2">
+        <div class="bg-pink-300 px-4 py-4 font-serif m-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Excepturi doloribus eligendi impedit cum soluta commodi voluptatum eveniet? 
+            Ratione inventore eveniet doloremque molestiae, cum accusamus a. 
+            Perspiciatis laboriosam unde modi tenetur!
+        </div>
+        <div class="bg-indigo-200 px-4 py-4 font-serif m-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Excepturi doloribus eligendi impedit cum soluta commodi voluptatum eveniet? 
+                Ratione inventore eveniet doloremque molestiae, cum accusamus a. 
+                Perspiciatis laboriosam unde modi tenetur!
+        </div>
+        <div class="bg-yellow-200 px-4 py-4 font-serif m-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Excepturi doloribus eligendi impedit cum soluta commodi voluptatum eveniet? 
+            Ratione inventore eveniet doloremque molestiae, cum accusamus a. 
+            Perspiciatis laboriosam unde modi tenetur!
+        </div>
+        <div class="bg-cyan-200 px-4 py-4 font-serif m-2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Excepturi doloribus eligendi impedit cum soluta commodi voluptatum eveniet? 
+        Ratione inventore eveniet doloremque molestiae, cum accusamus a. 
+        Perspiciatis laboriosam unde modi tenetur!
+        </div>
+    </div>
+
+    <!-- break before -->
+    <h1 class="text-center font-extrabold">Break Before</h1>
+    <p class="text-center">Utilities for controlling how a column or page should break before an element.</p>
+    <!-- break-before-auto, break-before-avoid, break-before-all,
+        break-before-avoid-page, break-before-page, break-before-left	
+        break-before-right, break-before-column 
+    -->
+    <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-before-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+
+     <h1 class="text-center font-extrabold">Break Inside</h1>
+    <p class="text-center">Utilities for controlling how a column or page should break within an element.</p>
+
+    <!--classes break-inside-auto, break-inside-avoid, break-inside-avoid-page, break-inside-avoid-column -->
+    <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-inside-avoid-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+
+
+      <h1 class="text-center font-extrabold">Box Decoration Break</h1>
+      <p class="text-center">Utilities for controlling how element fragments should be rendered across multiple lines, columns, or pages.</p>
+
+      <!--classes box decoration break -->
+      <span class="box-decoration-slice bg-gradient-to-r from-red-600 to-indigo-500 px-4 text-white">Guled Mohamed</span> <br />
+      <span class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br>
+        World
+      </span>
+
+    
+</body>
+</html>

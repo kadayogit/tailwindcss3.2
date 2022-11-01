@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link Taiwind css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Responsive Design in Taiwind CSS</title>
+</head>
+<body>
+    <!-- create responsive desigUsing responsive utility variants to build adaptive user interfaces. -->
+    <!-- sm, md, lg, xl, 2xl -->
+<div class="bg-black sm:bg-green-200 md:bg-blue-200 lg:bg-red-600">
+   <p> There are five breakpoints by default, inspired by common device resolutions:</p>
+   <img class="w-16 md:w-32 lg:w-48" src="img/photo.jpg" alt="photo">
+</div>
+
+<!-- Here’s a simple example of a marketing page component that uses a stacked layout on small screens -->
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/img/house.jpg" alt="Modern building architecture">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accomodation for your team</a>
+        <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Don't use sm: to target mobile devices -->
+  <div class="sm:text-center">
+    this is put the text in center md and lg not for sm 
+  </div>
+
+  <!-- Use unprefixed utilities to target mobile, and override them at larger breakpoints -->
+  <div class="text-center sm:text-right">
+    md and lg text will be right side
+  </div>
+
+  <!-- Targeting a breakpoint range -->
+  <!-- max-sm, max-md, max-lg, max-xl, max-2xl -->
+  <div class="md:max-xl:flex">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Debitis similique dignissimos porro officiis est, quisquam nihil, 
+    dolore facilis, saepe qui maiores ipsam. 
+    Sed doloremque cum dolore sunt necessitatibus quia harum!
+  </div>
+
+  <!-- Targeting a single breakpoint -->
+  <!-- To target a single breakpoint, 
+  target the range for that breakpoint by 
+  stacking a responsive modifier like md 
+  with the max-* modifier for the next breakpoint: -->
+
+  <div class="md:max-lg:flex">
+    <!-- ... -->
+  </div>
+
+  <!-- Customizing your theme -->
+  <!-- You can completely customize your breakpoints in your tailwind.config.js file: -->
+
+
+  <!-- Arbitrary values -->
+  <!-- If you need to use a one-off breakpoint that doesn’t make sense to include in your theme, 
+  use the min or max modifiers to generate custom breakpoint on the fly using any arbitrary value. -->
+
+  <div class="min-[320px]:text-center max-[600px]:bg-sky-300">
+    <!-- ... -->
+  </div>
+    
+</body>
+</html>
